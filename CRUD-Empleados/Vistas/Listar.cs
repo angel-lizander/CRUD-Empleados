@@ -12,18 +12,17 @@ using System.Windows.Forms;
 
 namespace CRUD_Empleados
 {
-    public partial class listar : Form
+    public partial class Listar : Form
     {
-        //Conexion a base de datos
         SqlConnection cn = new SqlConnection(
-        ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+      ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
 
-        public listar()
+        public Listar()
         {
             InitializeComponent();
         }
 
-        private void listar_Load(object sender, EventArgs e)
+        private void Listar_Load(object sender, EventArgs e)
         {
             SqlDataAdapter da;
             var tabla = new DataTable();

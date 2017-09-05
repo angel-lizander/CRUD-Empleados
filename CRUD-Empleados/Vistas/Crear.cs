@@ -56,5 +56,10 @@ namespace CRUD_Empleados
                 
             
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

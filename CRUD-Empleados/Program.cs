@@ -16,7 +16,7 @@ namespace CRUD_Empleados
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new listar());
+            Application.Run(new Vistas.Principal ());
         }
     }
 }

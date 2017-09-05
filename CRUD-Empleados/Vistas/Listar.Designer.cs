@@ -1,6 +1,6 @@
 ﻿namespace CRUD_Empleados
 {
-    partial class listar
+    partial class Listar
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,20 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 66);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(553, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(541, 193);
             this.dataGridView1.TabIndex = 0;
             // 
-            // listar
+            // Listar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 336);
+            this.ClientSize = new System.Drawing.Size(579, 308);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "listar";
-            this.Text = "listar";
-            this.Load += new System.EventHandler(this.listar_Load);
+            this.Name = "Listar";
+            this.Text = "Listar";
+            this.Load += new System.EventHandler(this.Listar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

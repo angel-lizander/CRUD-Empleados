@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtdireccion = new System.Windows.Forms.TextBox();
-            this.txtcedula = new System.Windows.Forms.TextBox();
-            this.txtapellido = new System.Windows.Forms.TextBox();
-            this.btnguardar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
+            this.btnguardar = new System.Windows.Forms.Button();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtcedula = new System.Windows.Forms.TextBox();
+            this.txtdireccion = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,69 +61,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleados";
             // 
-            // label1
+            // btncancelar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Direccion";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cedula";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Apellido";
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(68, 36);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(184, 20);
-            this.txtnombre.TabIndex = 5;
-            // 
-            // txtdireccion
-            // 
-            this.txtdireccion.Location = new System.Drawing.Point(68, 132);
-            this.txtdireccion.Name = "txtdireccion";
-            this.txtdireccion.Size = new System.Drawing.Size(184, 20);
-            this.txtdireccion.TabIndex = 6;
-            // 
-            // txtcedula
-            // 
-            this.txtcedula.Location = new System.Drawing.Point(68, 103);
-            this.txtcedula.Name = "txtcedula";
-            this.txtcedula.Size = new System.Drawing.Size(184, 20);
-            this.txtcedula.TabIndex = 7;
-            // 
-            // txtapellido
-            // 
-            this.txtapellido.Location = new System.Drawing.Point(68, 72);
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(184, 20);
-            this.txtapellido.TabIndex = 8;
+            this.btncancelar.Location = new System.Drawing.Point(209, 195);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(75, 23);
+            this.btncancelar.TabIndex = 10;
+            this.btncancelar.Text = "Cancelar";
+            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnguardar
             // 
@@ -135,22 +81,77 @@
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
-            // btncancelar
+            // txtapellido
             // 
-            this.btncancelar.Location = new System.Drawing.Point(209, 195);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(75, 23);
-            this.btncancelar.TabIndex = 10;
-            this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = true;
+            this.txtapellido.Location = new System.Drawing.Point(68, 72);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(184, 20);
+            this.txtapellido.TabIndex = 8;
             // 
-            // Form1
+            // txtcedula
+            // 
+            this.txtcedula.Location = new System.Drawing.Point(68, 103);
+            this.txtcedula.Name = "txtcedula";
+            this.txtcedula.Size = new System.Drawing.Size(184, 20);
+            this.txtcedula.TabIndex = 7;
+            // 
+            // txtdireccion
+            // 
+            this.txtdireccion.Location = new System.Drawing.Point(68, 132);
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.Size = new System.Drawing.Size(184, 20);
+            this.txtdireccion.TabIndex = 6;
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.Location = new System.Drawing.Point(68, 36);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(184, 20);
+            this.txtnombre.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Apellido";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 103);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Cedula";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 132);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Direccion";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre";
+            // 
+            // Crear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 266);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "Crear";
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
