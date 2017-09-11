@@ -1,6 +1,6 @@
-﻿namespace CRUD_Empleados
+﻿namespace CRUD_Empleados.Vistas
 {
-    partial class Crear
+    partial class Actualizar
     {
         /// <summary>
         /// Required designer variable.
@@ -40,12 +40,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtidempleado = new System.Windows.Forms.TextBox();
+            this.label = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtidempleado);
             this.groupBox1.Controls.Add(this.btncancelar);
             this.groupBox1.Controls.Add(this.btnguardar);
             this.groupBox1.Controls.Add(this.txtapellido);
@@ -56,10 +56,10 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 24);
+            this.groupBox1.Location = new System.Drawing.Point(21, 87);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(366, 230);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.Size = new System.Drawing.Size(341, 231);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleados";
             // 
@@ -71,7 +71,6 @@
             this.btncancelar.TabIndex = 10;
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.UseVisualStyleBackColor = true;
-            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnguardar
             // 
@@ -149,23 +148,35 @@
             // 
             // txtidempleado
             // 
-            this.txtidempleado.Location = new System.Drawing.Point(68, 169);
+            this.txtidempleado.Location = new System.Drawing.Point(205, 39);
             this.txtidempleado.Name = "txtidempleado";
             this.txtidempleado.Size = new System.Drawing.Size(100, 20);
-            this.txtidempleado.TabIndex = 11;
+            this.txtidempleado.TabIndex = 2;
             // 
-            // Crear
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(31, 42);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(148, 13);
+            this.label.TabIndex = 3;
+            this.label.Text = "Introduzca el ID del empleado";
+            // 
+            // Actualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 266);
+            this.ClientSize = new System.Drawing.Size(557, 357);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.txtidempleado);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Crear";
-            this.Text = "Empleados";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "Actualizar";
+            this.Text = "Actualizar";
+            this.Load += new System.EventHandler(this.Actualizar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -183,6 +194,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtidempleado;
+        private System.Windows.Forms.Label label;
     }
 }
-

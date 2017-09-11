@@ -28,6 +28,7 @@ namespace CRUD_Empleados
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
+
             var Empleados = new Clases.Empleados(txtnombre.Text, txtapellido.Text, txtcedula.Text, txtdireccion.Text);
             Empleados.registrar();
         }

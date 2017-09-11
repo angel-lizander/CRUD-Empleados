@@ -34,5 +34,11 @@ namespace CRUD_Empleados.Vistas
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Actualizar actualizar = new Actualizar();
+            actualizar.ShowDialog();
+        }
     }
 }

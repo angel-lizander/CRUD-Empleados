@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="Clases\Empleados.cs" />
     <Compile Include="Clases\Funciones.cs" />
+    <Compile Include="Vistas\Actualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Actualizar.Designer.cs">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Crear.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Vistas\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\Actualizar.resx">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Crear.resx">
       <DependentUpon>Crear.cs</DependentUpon>
     </EmbeddedResource>
