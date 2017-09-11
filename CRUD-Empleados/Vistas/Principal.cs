@@ -26,8 +26,13 @@ namespace CRUD_Empleados.Vistas
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Listar listar = new Listar();
-            listar.ShowDialog();
+            Listar buscar= new Listar();
+            buscar.ShowDialog();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

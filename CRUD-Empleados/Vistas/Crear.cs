@@ -32,7 +32,11 @@ namespace CRUD_Empleados
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO EMPLEADOS (NOMBRE, APELLIDO, CEDULA, DIRECCION)";
+            var Empleados = new Clases.Empleados(txtnombre.Text, txtapellido.Text, txtcedula.Text, txtdireccion.Text);
+            Empleados.registrar();
+
+
+           /* string query = "INSERT INTO EMPLEADOS (NOMBRE, APELLIDO, CEDULA, DIRECCION)";
             query += " VALUES (@NOMBRE, @APELLIDO, @CEDULA, @DIRECCION)";
 
             try
@@ -52,7 +56,7 @@ namespace CRUD_Empleados
             {
   
                 MessageBox.Show(p.Message);
-            }
+            }*/
                 
             
         }
